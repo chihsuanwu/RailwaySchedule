@@ -1,0 +1,79 @@
+{
+  "stations": 12,
+  "data": [
+    {
+      "type": "rail",
+      "line": [1, 1]
+    },
+    {
+      "name": "Nangang",
+      "type": "terminal",
+      "stop": 6
+    },
+    {
+      "name": "Taipei",
+      "type": "station",
+      "stop": [2, 2],
+      "pass": [0, 0]
+    },
+    {
+      "name": "Banqiao",
+      "type": "station",
+      "stop": [2, 2],
+      "pass": [0, 0]
+    },
+    {
+      "name": "Taoyuan",
+      "type": "station",
+      "stop": [1, 1],
+      "pass": [1, 1]
+    },
+    {
+      "name": "Hsinchu",
+      "type": "station",
+      "stop": [1, 1],
+      "pass": [1, 1]
+    },
+    {
+      "name": "Miaoli",
+      "type": "station",
+      "stop": [1, 1],
+      "pass": [1, 1]
+    },
+    {
+      "name": "Taichung",
+      "type": "station",
+      "stop": [2, 2],
+      "pass": [1, 1]
+    },
+    {
+      "name": "Changhua",
+      "type": "station",
+      "stop": [1, 1],
+      "pass": [1, 1]
+    },
+    {
+      "name": "Yunlin",
+      "type": "station",
+      "stop": [1, 1],
+      "pass": [1, 1]
+    },
+    {
+      "name": "Chiayi",
+      "type": "station",
+      "stop": [1, 1],
+      "pass": [1, 1]
+    },
+    {
+      "name": "Tainan",
+      "type": "station",
+      "stop": [1, 1],
+      "pass": [1, 1]
+    },
+    {
+      "name": "Zuoying",
+      "type": "terminal",
+      "stop": 6
+    }
+  ]
+}
