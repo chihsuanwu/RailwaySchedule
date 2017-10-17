@@ -1,0 +1,68 @@
+{
+  "type": [
+    {
+      "name": "10",
+      "stop": ["Nangang", "Taipei", "Banqiao", "Zuoying"]
+    },
+    {
+      "name": "11",
+      "stop": ["Nangang", "Taipei", "Taichung", "Zuoying"]
+    },
+    {
+      "name": "12",
+      "stop": ["Nangang", "Taipei", "Banqiao", "Taichung", "Zuoying"]
+    },
+    {
+      "name": "20",
+      "stop": ["Nangang", "Taipei", "Banqiao", "Taichung", "Tainan", "Zuoying"]
+    },
+    {
+      "name": "21",
+      "stop": ["Nangang", "Taipei", "Banqiao", "Taoyian", "Taichung", "Tainan", "Zuoying"]
+    },
+    {
+      "name": "22",
+      "stop": ["Nangang", "Taipei", "Banqiao", "Hsinchu", "Taichung", "Tainan", "Zuoying"]
+    },
+    {
+      "name": "23",
+      "stop": ["Nangang", "Taipei", "Banqiao", "Taichung", "Chiayi", "Tainan", "Zuoying"]
+    },
+    {
+      "name": "30",
+      "stop": ["Nangang", "Taipei", "Banqiao", "Taichung", "Changhua", "Yunlin", "Chiayi", "Tainan", "Zuoying"]
+    },
+    {
+      "name": "50",
+      "stop": ["Nangang", "Taipei", "Hsinchu", "Taichung"]
+    },
+    {
+      "name": "51",
+      "stop": ["Nangang", "Taipei", "Banqiao", "Hsinchu", "Taichung"]
+    },
+    {
+      "name": "52",
+      "stop": ["Nangang", "Taipei", "Banqiao", "Taoyian", "Hsinchu", "Taichung"]
+    },
+    {
+      "name": "53",
+      "stop": ["Nangang", "Taipei", "Banqiao", "Taoyian", "Hsinchu", "Miaoli", "Taichung"]
+    },
+    {
+      "name": "54",
+      "stop": ["Taichung", "Changhua", "Yunlin", "Chiayi", "Tainan", "Zuoying"]
+    },
+    {
+      "name": "60",
+      "stop": ["Nangang", "Taipei", "Banqiao", "Taoyian", "Hsinchu", "Taichung", "Chiayi", "Tainan", "Zuoying"]
+    },
+    {
+      "name": "61",
+      "stop": ["Nangang", "Taipei", "Banqiao", "Taoyian", "Hsinchu", "Taichung", "Yunlin", "Tainan", "Zuoying"]
+    },
+    {
+      "name": "80",
+      "stop": ["Nangang", "Taipei", "Banqiao", "Taoyian", "Hsinchu", "Miaoli", "Taichung", "Changhua", "Yunlin", "Chiayi", "Tainan", "Zuoying"]
+    },
+  ]
+}
