@@ -2,73 +2,144 @@
   "stations": 12,
   "data": [
     {
-      "type": "rail",
-      "line": [1, 1]
-    },
-    {
       "name": "Nangang",
       "type": "terminal",
       "stop": 6
     },
     {
+      "type": "rail",
+      "line": [1, 1],
+      "time": 8
+    },
+    {
       "name": "Taipei",
       "type": "station",
       "stop": [2, 2],
-      "pass": [0, 0]
+      "pass": [0, 0],
+      "stop_time": 3,
+      "pass_time": null
+    },
+    {
+      "type": "rail",
+      "line": [1, 1],
+      "time": 6
     },
     {
       "name": "Banqiao",
       "type": "station",
       "stop": [2, 2],
-      "pass": [0, 0]
+      "pass": [0, 0],
+      "stop_time": 2,
+      "pass_time": 0
+    },
+    {
+      "type": "rail",
+      "line": [1, 1],
+      "time": 12
     },
     {
       "name": "Taoyuan",
       "type": "station",
       "stop": [1, 1],
-      "pass": [1, 1]
+      "pass": [1, 1],
+      "stop_time": 2,
+      "pass_time": -3
+    },
+    {
+      "type": "rail",
+      "line": [1, 1],
+      "time": 10
     },
     {
       "name": "Hsinchu",
       "type": "station",
       "stop": [1, 1],
-      "pass": [1, 1]
+      "pass": [1, 1],
+      "stop_time": 2,
+      "pass_time": -4
+    },
+    {
+      "type": "rail",
+      "line": [1, 1],
+      "time": 10
     },
     {
       "name": "Miaoli",
       "type": "station",
       "stop": [1, 1],
-      "pass": [1, 1]
+      "pass": [1, 1],
+      "stop_time": 1,
+      "pass_time": -3
+    },
+    {
+      "type": "rail",
+      "line": [1, 1],
+      "time": 16
     },
     {
       "name": "Taichung",
       "type": "station",
       "stop": [2, 2],
-      "pass": [1, 1]
+      "pass": [1, 1],
+      "stop_time": 2,
+      "pass_time": -2
+    },
+    {
+      "type": "rail",
+      "line": [1, 1],
+      "time": 10
     },
     {
       "name": "Changhua",
       "type": "station",
       "stop": [1, 1],
-      "pass": [1, 1]
+      "pass": [1, 1],
+      "stop_time": 1,
+      "pass_time": -4
+    },
+    {
+      "type": "rail",
+      "line": [1, 1],
+      "time": 9
     },
     {
       "name": "Yunlin",
       "type": "station",
       "stop": [1, 1],
-      "pass": [1, 1]
+      "pass": [1, 1],
+      "stop_time": 1,
+      "pass_time": -5
+    },
+    {
+      "type": "rail",
+      "line": [1, 1],
+      "time": 12
     },
     {
       "name": "Chiayi",
       "type": "station",
       "stop": [1, 1],
-      "pass": [1, 1]
+      "pass": [1, 1],
+      "stop_time": 1,
+      "pass_time": -4
+    },
+    {
+      "type": "rail",
+      "line": [1, 1],
+      "time": 16
     },
     {
       "name": "Tainan",
       "type": "station",
       "stop": [1, 1],
-      "pass": [1, 1]
+      "pass": [1, 1],
+      "stop_time": 1,
+      "pass_time": -4
+    },
+    {
+      "type": "rail",
+      "line": [1, 1],
+      "time": 12
     },
     {
       "name": "Zuoying",
