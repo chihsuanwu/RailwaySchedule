@@ -1,5 +1,7 @@
 {
   "stations": 12,
+  "departure_arrival_interval": 3,
+  "wait_interval": 1,
   "data": [
     {
       "name": "Nangang",
