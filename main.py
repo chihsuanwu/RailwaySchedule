@@ -7,7 +7,7 @@ class App(tk.Tk):
         super().__init__()
 
         self.__read_data()
-        self.schedule = Schedule()
+        self.schedule = Schedule(self.station_data)
         self.__create_widgets()
         tk.mainloop()
 
@@ -36,7 +36,6 @@ class App(tk.Tk):
                 stations += 1
                 self.__draw_station(canvas, data, line, stations)
 
-
     def __draw_station(self, canvas, data, line, index):
         x_pos = 200 * index - 100
         y_pos = 150
@@ -52,9 +51,11 @@ class App(tk.Tk):
 
         if data['type'] == 'terminal':
             stop = data['stop']
+            # All line in terminal is stop line.
             for x in range(stop):
                 dy_pos = y_pos - (main_line - 1) * 8 + x * 16 - (stop - 2) // 2 * 16
                 canvas.create_line(x_pos - 50, dy_pos, x_pos + 50, dy_pos, fill='blue')
+                # Draw terminal mark.
                 if index == 1:
                     canvas.create_line(x_pos - 50, dy_pos - 4, x_pos - 50, dy_pos + 4)
                 else:
@@ -62,20 +63,20 @@ class App(tk.Tk):
         else:
             stop = data['stop']
             pass_line = data['pass']
+            # Draw pass line.
             for x in range(pass_line[0]):
                 dy_pos = y_pos - (main_line - 1) * 8 + (line[1] + x) * 16
                 canvas.create_line(x_pos - 50, dy_pos, x_pos + 50, dy_pos, fill='red')
             for x in range(pass_line[1]):
                 dy_pos = y_pos - (main_line - 1) * 8 + (line[1] - 1 - x) * 16
                 canvas.create_line(x_pos - 50, dy_pos, x_pos + 50, dy_pos, fill='red')
-
+            # Draw stop line.
             for x in range(stop[0]):
                 dy_pos = y_pos - (main_line - 1) * 8 + (line[1] + pass_line[0] + x) * 16
                 canvas.create_line(x_pos - 50, dy_pos, x_pos + 50, dy_pos, fill='blue')
             for x in range(stop[1]):
                 dy_pos = y_pos - (main_line - 1) * 8 + (line[1] - 1 - pass_line[1] - x) * 16
                 canvas.create_line(x_pos - 50, dy_pos, x_pos + 50, dy_pos, fill='blue')
-
 
     def __draw_rail(self, canvas, data, index):
         x_pos = 200 * index
@@ -87,33 +88,76 @@ class App(tk.Tk):
             dy_pos = y_pos - (main_line - 1) * 8 + x * 16
             canvas.create_line(x_pos - 50, dy_pos, x_pos + 50, dy_pos)
 
+
 class Schedule(object):
-    def __init__(self):
+    def __init__(self, station_data):
+        self.station_data = station_data
         with open('train.json') as data_file:
             self.train_data = json.load(data_file)
         with open('input.json') as data_file:
             self.input_data = json.load(data_file)
 
+        self.schedule = {}
+        self.station_array = []
+        self.cycle = self.input_data['cycle']
+        for station in station_data['data']:
+            if station['type'] == 'rail':
+                continue
+            self.schedule.update({station['name']: [None] * self.cycle})
+            self.station_array.append(station['name'])
+
         self.__encode_data()
+        self.create_scheduel()
 
     def __encode_data(self):
         self.schedule_data = []
-        for key, value in self.input_data.items():
+        for key, value in self.input_data['train'].items():
             train_data = self.train_data[value['type']]
+
             previous = train_data[0]
+            index = 1
+            from_stop = True
             first = True
-            for station in train_data:
-                if first == True:
-                    first = False
+            for station in self.station_array:
+                # Find the first station.
+                if first:
+                    if station == previous:
+                        first = False
                     continue
-                # train_no-station_from-station_to
-                code = key + '-' + previous + '-' + station
-                previous = station
+
+                to_stop = False
+                if station == train_data[index]:
+                    to_stop = True
+                    index += 1
+
+                # Store data.
+                code = {
+                    'no': key,
+                    'from': previous,
+                    'from_stop': from_stop,
+                    'to': station,
+                    'to_stop': to_stop
+                }
                 self.schedule_data.append(code)
-        random.shuffle(self.schedule_data)
+                print(code)
+
+                # Update data to next station.
+                previous = station
+                from_stop = to_stop
+
+
 
     def create_scheduel(self):
-        pass
+        interval = self.station_data['departure_arrival_interval']
+        for data in self.schedule_data:
+            station_from = data['from']
+            station_to = data['to']
+            for time, value in enumerate(self.schedule[station_from]):
+                if value == None:
+                    self.schedule[station_from][time] = data['no']
+
+
+
 
 
 

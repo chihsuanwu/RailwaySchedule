@@ -3,16 +3,16 @@
   "11": ["Nangang", "Taipei", "Taichung", "Zuoying"],
   "12": ["Nangang", "Taipei", "Banqiao", "Taichung", "Zuoying"],
   "20": ["Nangang", "Taipei", "Banqiao", "Taichung", "Tainan", "Zuoying"],
-  "21": ["Nangang", "Taipei", "Banqiao", "Taoyian", "Taichung", "Tainan", "Zuoying"],
+  "21": ["Nangang", "Taipei", "Banqiao", "Taoyuan", "Taichung", "Tainan", "Zuoying"],
   "22": ["Nangang", "Taipei", "Banqiao", "Hsinchu", "Taichung", "Tainan", "Zuoying"],
   "23": ["Nangang", "Taipei", "Banqiao", "Taichung", "Chiayi", "Tainan", "Zuoying"],
   "30": ["Nangang", "Taipei", "Banqiao", "Taichung", "Changhua", "Yunlin", "Chiayi", "Tainan", "Zuoying"],
   "50": ["Nangang", "Taipei", "Hsinchu", "Taichung"],
   "51": ["Nangang", "Taipei", "Banqiao", "Hsinchu", "Taichung"],
-  "52": ["Nangang", "Taipei", "Banqiao", "Taoyian", "Hsinchu", "Taichung"],
-  "53": ["Nangang", "Taipei", "Banqiao", "Taoyian", "Hsinchu", "Miaoli", "Taichung"],
+  "52": ["Nangang", "Taipei", "Banqiao", "Taoyuan", "Hsinchu", "Taichung"],
+  "53": ["Nangang", "Taipei", "Banqiao", "Taoyuan", "Hsinchu", "Miaoli", "Taichung"],
   "54": ["Taichung", "Changhua", "Yunlin", "Chiayi", "Tainan", "Zuoying"],
-  "60": ["Nangang", "Taipei", "Banqiao", "Taoyian", "Hsinchu", "Taichung", "Chiayi", "Tainan", "Zuoying"],
-  "61": ["Nangang", "Taipei", "Banqiao", "Taoyian", "Hsinchu", "Taichung", "Yunlin", "Tainan", "Zuoying"],
-  "80": ["Nangang", "Taipei", "Banqiao", "Taoyian", "Hsinchu", "Miaoli", "Taichung", "Changhua", "Yunlin", "Chiayi", "Tainan", "Zuoying"]
+  "60": ["Nangang", "Taipei", "Banqiao", "Taoyuan", "Hsinchu", "Taichung", "Chiayi", "Tainan", "Zuoying"],
+  "61": ["Nangang", "Taipei", "Banqiao", "Taoyuan", "Hsinchu", "Taichung", "Yunlin", "Tainan", "Zuoying"],
+  "80": ["Nangang", "Taipei", "Banqiao", "Taoyuan", "Hsinchu", "Miaoli", "Taichung", "Changhua", "Yunlin", "Chiayi", "Tainan", "Zuoying"]
 }
